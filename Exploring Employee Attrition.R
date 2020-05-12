@@ -2,6 +2,10 @@
 #________________________________________________Exploring Employees’ Attrition ____________________________________
 #___________________________________________________________________________________________________________________
 
+#    To read the detailed explanation  of this script,  check out the code outputs and visualizations  go to:  
+#                                       https://hrdatamining.com/exp-attrition-r/
+
+
 install.packages("ggpubr")
 install.packages("wesanderson")
 library(wesanderson)
