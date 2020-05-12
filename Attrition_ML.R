@@ -1,5 +1,5 @@
 #___________________________________________________________________________________________________________________
-#________________________________________________Predicting Employees’ Attrition __________________________________________________
+#________________________________________________Predicting Employees’ Attrition ___________________________________
 #___________________________________________________________________________________________________________________
 
 #Instal Packages and Libraries 
@@ -252,7 +252,7 @@ Balanced_Accuracies <- c(DTM_CM$byClass["Balanced Accuracy"], RFM_CM$byClass["Ba
 F1_Scores <- c(DTM_CM$byClass["F1"], RFM_CM$byClass["F1"], XGBM_CM$byClass["F1"], SVM_CM$byClass["F1"], 
                GLM_CM$byClass["F1"], NBM_CM$byClass["F1"], Knn_CM$byClass["F1"])
 
-#Create a data frame for stat lists
+#Create a data frame from the metrics in confusion matrixes and models
 Models  <- c("DTM", "RFM", "XGBM", "SVM", "GLM", "NBM", "KNN")
 StatComp <- data.frame(Models, Sensitivities, Specificities, Precisions, Recalls, F1_Scores, Accuracies, Balanced_Accuracies)
 
@@ -266,8 +266,8 @@ t1 <- ttheme_minimal(
 grid.table(StatComp, theme=t1, title)
 StatComp
 
-#_______________________________________________________
-
+#_____________________
+#create stacked barplot to compare values 
 #Round values to 3 decimal 
 StatComp$Sensitivities <- round(StatComp$Sensitivities, digit=3)
 StatComp$Specificities <- round(StatComp$Specificities, digit=3)
