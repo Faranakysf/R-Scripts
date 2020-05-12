@@ -1,6 +1,9 @@
 #___________________________________________________________________________________________________________________
 #________________________________________________Predicting Employees’ Attrition ___________________________________
 #___________________________________________________________________________________________________________________
+#    To read the detailed explanation  of this script,  check out the code outputs and visualizations  go to:  
+#                             https://hrdatamining.com/r-predict-employee-attrition/
+
 
 #Instal Packages and Libraries 
 install.packages("kknn", 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.6/kknn_1.3.1.tgz')
